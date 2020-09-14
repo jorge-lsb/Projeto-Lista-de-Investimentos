@@ -10,9 +10,29 @@ namespace Lista_de_Investimentos.Controllers
     [Route("[controller]")]
     public class InvestmentFundsController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+       public InvestmentFundsList Get()
+       {
+            InvestmentFundsList investmentFundsList = new InvestmentFundsList();
+
+            for (int i = 0; i < 6; i++)
+            {
+                InvestmentFunds investmentFunds = new InvestmentFunds();
+                investmentFunds.Name = $"Teste{i}";
+                investmentFunds.MonthlyProfitability = 21;
+                investmentFunds.Manager = $"Gestor{i}";
+                investmentFunds.Description = "Teste Descrição";
+                investmentFunds.QuotaPrice = 118;
+                investmentFunds.TypeInvestmentFund = "RENDA VARIAVEL";
+                investmentFunds.Initials = "SLA";
+                investmentFundsList.SetInvestmentFunds(investmentFunds);
+            }
+            return investmentFundsList;
+       }
+        [HttpPost]
+        public InvestmentFundsList Set(InvestmentFundsList investmentFundsList)
         {
-            return View();
+            return investmentFundsList;
         }
     }
 }
