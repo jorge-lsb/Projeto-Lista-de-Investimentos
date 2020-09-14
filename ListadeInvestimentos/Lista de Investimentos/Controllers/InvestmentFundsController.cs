@@ -11,10 +11,13 @@ namespace Lista_de_Investimentos.Controllers
     public class InvestmentFundsController : Controller
     {
         [HttpGet]
+        //Get para pegar as propriedades e atribuir valores e exibilos
        public InvestmentFundsList Get()
        {
+            //Nova instancia Lista de fundo de investimentos
             InvestmentFundsList investmentFundsList = new InvestmentFundsList();
 
+            //Gerando 6 fundos de investimentos com suas propridades
             for (int i = 0; i < 6; i++)
             {
                 InvestmentFunds investmentFunds = new InvestmentFunds();
@@ -27,8 +30,10 @@ namespace Lista_de_Investimentos.Controllers
                 investmentFunds.Initials = "SLA";
                 investmentFundsList.SetInvestmentFunds(investmentFunds);
             }
+            // retornando a lista de fundo de investimento
             return investmentFundsList;
        }
+
         [HttpPost]
         public InvestmentFundsList Set(InvestmentFundsList investmentFundsList)
         {
