@@ -11,7 +11,7 @@ namespace Lista_de_Investimentos.Controllers
     public class StockExchangeShareController : Controller
     {
         private static readonly string[] initials = new[]
-       {
+        {
             "BIDI4", "ABEV3", "PETZ3", "PETR4", "FLRY4", "MOVI3"
         };
         [HttpGet]
