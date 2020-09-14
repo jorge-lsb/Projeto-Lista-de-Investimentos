@@ -10,22 +10,30 @@ namespace Lista_de_Investimentos.Controllers
     [Route("[controller]")]
     public class StockExchangeShareController : Controller
     {
-       [HttpGet]
+        private static readonly string[] initials = new[]
+       {
+            "BIDI4", "ABEV3", "PETZ3", "PETR4", "FLRY4", "MOVI3"
+        };
+        [HttpGet]
        public StockExchangeSharesList Get()
         {
             //Nova intancia de lista de ações
             StockExchangeSharesList stockExchangeSharesList = new StockExchangeSharesList();
+
+            //intancia de classe random para valores aleatorios
+            Random random = new Random();
+
             // For para gerar novas ações
             for (int i = 0; i < 6; i++)
             {
                 //Nova instancia de ação atribuindo dados a ela
                 StockExchangeShares stockExchangeShares = new StockExchangeShares();
                 stockExchangeShares.Name = $"Teste{i}";
-                stockExchangeShares.Pl = 10;
-                stockExchangeShares.Roe = 10;
-                stockExchangeShares.SharePrice = 12.96;
-                stockExchangeShares.MonthlyProfitability = 21;
-                stockExchangeShares.Initials = "Teste";
+                stockExchangeShares.Pl = random.NextDouble() * 10;
+                stockExchangeShares.Roe = random.NextDouble() * 10;
+                stockExchangeShares.SharePrice = random.NextDouble() * 100;
+                stockExchangeShares.MonthlyProfitability = random.Next(10,50);
+                stockExchangeShares.Initials = initials[random.Next(initials.Length)];
                 stockExchangeShares.Description = "Ação teste";
                 stockExchangeShares.TypeStockExchangeShares = "on";
                 stockExchangeSharesList.SetStockExchangeShares(stockExchangeShares);
