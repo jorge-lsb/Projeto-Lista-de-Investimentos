@@ -13,12 +13,14 @@ namespace Lista_de_Investimentos.Controllers
        [HttpGet]
        public StockExchangeSharesList Get()
         {
+            //Nova intancia de lista de ações
             StockExchangeSharesList stockExchangeSharesList = new StockExchangeSharesList();
-
+            // For para gerar novas ações
             for (int i = 0; i < 6; i++)
             {
+                //Nova instancia de ação atribuindo dados a ela
                 StockExchangeShares stockExchangeShares = new StockExchangeShares();
-                stockExchangeShares.Name = $"Teste{1}";
+                stockExchangeShares.Name = $"Teste{i}";
                 stockExchangeShares.Pl = 10;
                 stockExchangeShares.Roe = 10;
                 stockExchangeShares.SharePrice = 12.96;
@@ -27,9 +29,13 @@ namespace Lista_de_Investimentos.Controllers
                 stockExchangeShares.Description = "Ação teste";
                 stockExchangeShares.TypeStockExchangeShares = "on";
                 stockExchangeSharesList.SetStockExchangeShares(stockExchangeShares);
-
-
             }
+            return stockExchangeSharesList;
+        }
+
+        [HttpPost]
+        public StockExchangeSharesList Set(StockExchangeSharesList stockExchangeSharesList)
+        {
             return stockExchangeSharesList;
         }
     }
