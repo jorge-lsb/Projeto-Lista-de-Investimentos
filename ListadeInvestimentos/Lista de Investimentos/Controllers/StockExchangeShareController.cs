@@ -10,9 +10,27 @@ namespace Lista_de_Investimentos.Controllers
     [Route("[controller]")]
     public class StockExchangeShareController : Controller
     {
-        public IActionResult Index()
+       [HttpGet]
+       public StockExchangeSharesList Get()
         {
-            return View();
+            StockExchangeSharesList stockExchangeSharesList = new StockExchangeSharesList();
+
+            for (int i = 0; i < 6; i++)
+            {
+                StockExchangeShares stockExchangeShares = new StockExchangeShares();
+                stockExchangeShares.Name = $"Teste{1}";
+                stockExchangeShares.Pl = 10;
+                stockExchangeShares.Roe = 10;
+                stockExchangeShares.SharePrice = 12.96;
+                stockExchangeShares.MonthlyProfitability = 21;
+                stockExchangeShares.Initials = "Teste";
+                stockExchangeShares.Description = "Ação teste";
+                stockExchangeShares.TypeStockExchangeShares = "on";
+                stockExchangeSharesList.SetStockExchangeShares(stockExchangeShares);
+
+
+            }
+            return stockExchangeSharesList;
         }
     }
 }

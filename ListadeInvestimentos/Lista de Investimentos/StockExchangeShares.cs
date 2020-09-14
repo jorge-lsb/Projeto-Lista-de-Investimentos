@@ -16,11 +16,5 @@ namespace Lista_de_Investimentos
 
         public string TypeStockExchangeShares { get; set; }
 
-        // Construtor Vazio
-        public StockExchangeShares()
-        {
-
-        }
-
     }
 }
