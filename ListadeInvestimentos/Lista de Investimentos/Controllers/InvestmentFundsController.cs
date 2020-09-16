@@ -23,10 +23,10 @@ namespace Lista_de_Investimentos.Controllers
 
         [HttpGet]
         //Get para pegar as propriedades e atribuir valores e exibilos
-       public InvestmentFundsList Get()
+       public InvestimentList<InvestmentFunds>  Get()
        {
             //Nova instancia Lista de fundo de investimentos
-            InvestmentFundsList investmentFundsList = new InvestmentFundsList();
+            var investmentFundsList = new InvestimentList<InvestmentFunds>();
 
             // Classe radom para valores aleatorios
             Random random = new Random();
@@ -42,14 +42,14 @@ namespace Lista_de_Investimentos.Controllers
                 investmentFunds.QuotaPrice = random.NextDouble() * 200;
                 investmentFunds.TypeInvestmentFund = typesfunds[random.Next(typesfunds.Length)];
                 investmentFunds.Initials = "SLA";
-                investmentFundsList.SetInvestmentFunds(investmentFunds);
+                investmentFundsList.SetInvestment(investmentFunds);
             }
             // retornando a lista de fundo de investimento
             return investmentFundsList;
        }
 
         [HttpPost]
-        public InvestmentFundsList Set(InvestmentFundsList investmentFundsList)
+        public InvestimentList<InvestmentFunds> Set(InvestimentList<InvestmentFunds> investmentFundsList)
         {
             return investmentFundsList;
         }

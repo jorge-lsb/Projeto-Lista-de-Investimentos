@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Lista_de_Investimentos.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lista_de_Investimentos.Controllers
@@ -10,25 +11,12 @@ namespace Lista_de_Investimentos.Controllers
     [Route("[controller]")]
     public class InvestmentListController : Controller
     {
-        // Vetor de sligas de investimentos 
-        private static readonly string[] initials1 = new[]
-         {
-            "BIDI4", "ABEV3", "PETZ3", "PETR4", "FLRY4", "MOVI3"
-        };
-
-        // Vetor de sligas de investimentos 
-        private static readonly string[] initials = new[]
-        {
-            "LTN", "NTN-F", "LFT", "NTN-B"
-        };
-
-
         // Pegando Informações para exibir
         [HttpGet]
-        public InvestimentList Get()
+        public InvestimentList<Investments> Get()
         {
             // Intancia de uma nova lista de investimentos (InvestimentList)
-            InvestimentList investimentList = new InvestimentList();
+            var investimentList = new InvestimentList<Investments>();
 
             // Intanciando a classe Random para gerar valores de rentabilidade aleatorios e siglas aleatorias;
             Random random = new Random();
@@ -37,15 +25,17 @@ namespace Lista_de_Investimentos.Controllers
             for (int i = 0; i < 6; i++)
             {
                 //Intanciando classes de investimentos
-                DirectTreasure directTreasure = new DirectTreasure();
-                InvestmentFunds investmentFunds = new InvestmentFunds();
-                StockExchangeShares stockExchangeShares = new StockExchangeShares();
-                
+                var directTreasure = new DirectTreasure();
+                var investmentFunds = new InvestmentFunds();
+                var stockExchangeShares = new StockExchangeShares();
+
+
                 //Adicionando suas caracteristicas
 
+                var initialsStockEx = Enum.GetNames(typeof(InitialsStockExchangeShare));
                 stockExchangeShares.Name = $"Ação{i}";
                 stockExchangeShares.MonthlyProfitability = random.Next(10, 50);
-                stockExchangeShares.Initials = initials1[random.Next(initials1.Length)];
+                stockExchangeShares.Initials = initialsStockEx[random.Next(initialsStockEx.Length)];
                 stockExchangeShares.Description = "Ação teste";
 
 
@@ -55,10 +45,11 @@ namespace Lista_de_Investimentos.Controllers
                 investmentFunds.Initials = "SLA";
 
 
+                var valuesinitials = Enum.GetNames(typeof(InitialsTypeDirectTreasure));
                 directTreasure.Name = $"Tesouro direto{i + 1}";
                 directTreasure.Description = $"Descrição teste{i + 1}";
                 directTreasure.MonthlyProfitability = random.Next(1, 45);
-                directTreasure.Initials = initials[random.Next(initials.Length)];
+                directTreasure.Initials = valuesinitials[random.Next(valuesinitials.Length)];
 
                 investimentList.SetInvestment(stockExchangeShares);
                 investimentList.SetInvestment(directTreasure);
@@ -68,7 +59,7 @@ namespace Lista_de_Investimentos.Controllers
             return investimentList;
         }
         [HttpPost]
-        public InvestimentList Set(InvestimentList investimentList)
+        public InvestimentList<Investments> Set(InvestimentList<Investments> investimentList)
         {
             return investimentList;
         }

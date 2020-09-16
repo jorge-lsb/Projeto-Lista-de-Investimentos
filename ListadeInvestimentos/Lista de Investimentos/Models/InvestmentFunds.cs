@@ -15,10 +15,10 @@ namespace Lista_de_Investimentos
         public string TypeInvestmentFund { get; set; }
 
         // Contrutor Vazio
-        public InvestmentFunds()
-        {
+        //public InvestmentFunds()
+        //{
 
-        }
+        //}
 
 
     }

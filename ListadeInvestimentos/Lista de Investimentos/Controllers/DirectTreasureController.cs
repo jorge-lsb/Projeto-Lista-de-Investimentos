@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Lista_de_Investimentos.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lista_de_Investimentos.Controllers
@@ -10,24 +11,12 @@ namespace Lista_de_Investimentos.Controllers
     [Route("[controller]")]
     public class DirectTreasureController : Controller
     {
-        // Vetor de sligas de investimentos 
-        private static readonly string[] initials = new[]
-        {
-            "LTN", "NTN-F", "LFT", "NTN-B"
-        };
-
-        // Vetor de Tipo de investimentos 
-        private static readonly string[] type = new[]
-        {
-            "POS-FIXADO", "PRÉ-FIXADO"
-        };
-
         [HttpGet]
         //Get para pegar as propriedades atribuir valores e mostrar depois
-        public DirectTreasureList Get()
+        public InvestimentList<DirectTreasure> Get()
         {
             //Nova instancia de lista de tesouro direto
-            DirectTreasureList directTreasureList = new DirectTreasureList();
+            var directTreasureList = new InvestimentList<DirectTreasure>();
 
             //Intanciando radom para valores aleatorios
             Random random = new Random();
@@ -35,22 +24,25 @@ namespace Lista_de_Investimentos.Controllers
             //Gerando 6 tesouro direto
             for (int i = 0; i < 6; i++)
             {
+                var valuesinitials = Enum.GetNames(typeof(InitialsTypeDirectTreasure));
+                var type = Enum.GetNames(typeof(TypeDirectTreasure));
+
                 //Nova instancia de tesouro direto
                 DirectTreasure directTreasure = new DirectTreasure();
                 directTreasure.Name = $"Tesouro direto{i + 1}";
                 directTreasure.Description = $"Descrição teste{i + 1}";
                 directTreasure.MonthlyProfitability = random.Next(1,45);
-                directTreasure.Initials = initials[random.Next(initials.Length)];
+                directTreasure.Initials = valuesinitials[random.Next(valuesinitials.Length)];
                 directTreasure.Price = random.NextDouble() * 200;
                 directTreasure.TypeDirectTreasure = type[random.Next(type.Length)];
-                directTreasureList.SetDirectTreasure(directTreasure);
+                directTreasureList.SetInvestment(directTreasure);
             }
             //Retornando a lista
             return directTreasureList;
         }
 
         [HttpPost]
-        public DirectTreasureList Set(DirectTreasureList directTreasureList)
+        public InvestimentList<DirectTreasure> Set(InvestimentList<DirectTreasure> directTreasureList)
         {
             return directTreasureList;
         }

@@ -18,17 +18,17 @@ namespace Lista_de_Investimentos
         public string Initials { get; set; }
 
         // Contrutor Vazio
-        public Investments()
-        {
+        //public Investments()
+        //{
 
-        }
+        //}
 
         // Construtor com parametros obrigatorios
-        public Investments(string name, string description)
-        {
-            Name = name;
-            Description = description;
-        }
+        //public Investments(string name, string description)
+        //{
+        //    Name = name;
+        //    Description = description;
+        //}
 
     }
 
