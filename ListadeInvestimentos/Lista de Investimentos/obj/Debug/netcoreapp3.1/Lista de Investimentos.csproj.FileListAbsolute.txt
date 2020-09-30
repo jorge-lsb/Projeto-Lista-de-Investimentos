@@ -1,0 +1,40 @@
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.csprojAssemblyReference.cache
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.AssemblyInfoInputs.cache
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.AssemblyInfo.cs
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.RazorTargetAssemblyInfo.cache
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\staticwebassets\Lista de Investimentos.StaticWebAssets.Manifest.cache
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\staticwebassets\Lista de Investimentos.StaticWebAssets.xml
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.exe
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.deps.json
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.runtimeconfig.json
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.runtimeconfig.dev.json
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.dll
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.pdb
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.csproj.CoreCompileInputs.cache
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.dll
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.pdb
+C:\Users\jorge.barbosa\Desktop\Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.genruntimeconfig.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.exe
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.deps.json
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.runtimeconfig.json
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.runtimeconfig.dev.json
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.dll
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\bin\Debug\netcoreapp3.1\Lista de Investimentos.pdb
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.csprojAssemblyReference.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.AssemblyInfoInputs.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.AssemblyInfo.cs
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.csproj.CoreCompileInputs.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.RazorTargetAssemblyInfo.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\staticwebassets\Lista de Investimentos.StaticWebAssets.Manifest.cache
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\staticwebassets\Lista de Investimentos.StaticWebAssets.xml
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.dll
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.pdb
+C:\Users\jorge.barbosa\Desktop\Projeto-Lista-de-Investimentos\ListadeInvestimentos\Lista de Investimentos\obj\Debug\netcoreapp3.1\Lista de Investimentos.genruntimeconfig.cache
